@@ -10,16 +10,19 @@ num_list.sort(reverse=True)
 #3. Create an empty list.
 emp_list = []
 #4. Remove the median number from the first list and add it to the second list.
-import statistics
-median_val = statistics.median(num_list)
-num_list.remove(median_val)
-emp_list.append(median_val)
+var1 = num_list.pop(4)
+emp_list.append(var1)
 #5. Remove the first number from the first list and add it to the second list.
-
+var2 = num_list.pop(0)
+emp_list.append(var2)
 #6. Print both lists.
-
+print(num_list)
+print(emp_list)
 #7. Add the two numbers in the second list together and print the result.
-
-#8. Move the number back to the first list (like you did in #4 and #5 but reversed).
-
+emp_list_sum = emp_list[0] + emp_list[1]
+print(emp_list_sum)
+#8. Add the sum from #7 to the first list.
+num_list.append(emp_list_sum)
 #9. Sort the first list from lowest to highest and print it.
+num_list.sort()
+print(num_list)
