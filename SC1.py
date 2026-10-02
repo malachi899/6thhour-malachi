@@ -46,7 +46,17 @@ creaturedictonary = {
         "weak spot" : "chest"
     },
 }
-int(input(creaturedictonary["skag"].update({"damage" : 500}
+while True:
+
+    enemyselect = str(input("What enemy needs changes(skag,The Warrior,Handsome Jack,gardian,psycho)"))
+    enemystat = str(input("what stat needs to be changed(damage,health,defense)"))
+    enemychange = int(input("what do you want to change the stat to"))
+    creaturedictonary[enemyselect].update({enemystat: enemychange})
+    keepgoing = input("Do you want to change another enemy? (yes/no): ").lower()
+    if keepgoing != 'yes':
+        print("Exiting setup. Final stats saved!")
+        break
+print(creaturedictonary)
 
 #Other than damage which is required, it is up to you to decide what properties are
 #important and the theme of the game.
