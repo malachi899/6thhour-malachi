@@ -1,9 +1,8 @@
 #Name: malachi
 #personal work
 
-
-import random
 import time
+import random
 wifi = random.choice([True, False])
 login = random.choice([True, False])
 admin = random.choice([True, False])
@@ -14,8 +13,8 @@ if userinput == password:
     print("Access Granted!")
 else:
     print("Access Denied. Incorrect password.")
-    penalty_time = 60
-    for i in range(penalty_time, 0, -1):
+    penaltytime = 60
+    for i in range(penaltytime, 0, -1):
         print(f"Please wait {i} seconds to try again...", end="\r")
         time.sleep(1)
     print("\n")
