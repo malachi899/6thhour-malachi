@@ -1,7 +1,7 @@
-#Name:
+#Name: malachi
 #Class: 6th Hour
 #Assignment: HW15
-
+from math import factorial
 
 #1. Create a for loop with variable i that counts down from 5 to 1 and then prints "Hello World!"
 #at the end.
@@ -27,18 +27,30 @@ for c in animals:
 #5. Create a for loop that spells out a word you input backwards.
 #(HINT: Google "How to reverse a string in Python")
 word = "hello"[::-1]
-for d in input(word):
+for d in word:
     print(d)
-
 #6. Create a list containing 10 integers of your choice and print the list.
-
+numlist = [8,5,4,10,11,15,21,67,69,19]
+print(numlist)
 #7. Create two empty variables named evenNumbers and oddNumbers.
-
+evenNumbers = 0
+oddNumbers = 0
 #8. Make a loop that counts the number of even and odd numbers in the list, and prints the
 #result after the loop.
-
+for e in numlist:
+    if e % 2 == 0: \
+        evenNumbers += 1
+    else:
+        oddNumbers += 1
+print("Even numbers count:", evenNumbers)
+print("Odd numbers count:", oddNumbers)
 #9. Create a variable that asks the user for an integer and an empty integer variable.
-
+f = int(input("Enter an integer: "))
+g = 0
 #10. Create a loop with a range from 1 to the number the user input. Use the loop to find the
 #factorial of that number and print the result. A factorial of a number is that number multiplied
 #by every number before it until you reach 1. (For example: 5! is 5 x 4 x 3 x 2 x 1 = 120)
+# Get input from the user and convert it to an integer
+
+
+
