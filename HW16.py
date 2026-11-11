@@ -36,9 +36,13 @@ while i <= 100:
     print(i)
     i += 1
 #11. Create a list containing the names of five other students in the classroom.
-stulist = ["raph","benson","owen","misa","nate"]
+stu_list = ["raph","benson","owen","misa","nate"]
 #12. Create a for loop that individually prints out the names of each student in the list.
-for t
+for a in stu_list:
+    print(a)
 #13. Create a for loop that counts from 1 to 100, but ends early if the number is a multiple of 10.
-
+for b in range(1,100):
+    if b % 10 == 0:
+        break
+    print(b)
 #14. Free space. Do something creative. :)
