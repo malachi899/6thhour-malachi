@@ -52,7 +52,7 @@ g = 0
 #by every number before it until you reach 1. (For example: 5! is 5 x 4 x 3 x 2 x 1 = 120)
 # Get input from the user and convert it to an integer
 j = 1
-for h in range(1,f+1):
+for h in (range(1,f+1)):
     j *= h
     print(j)
 
